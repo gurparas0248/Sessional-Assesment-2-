@@ -53,13 +53,13 @@ while(i<=arr.length){
                     Data = data.data;
                     console.log(Data);
                     console.log(Data[0]);
-                    var html = "<p>";
-                      html += '<br/>';
+                    var html = "<h5>";
+                    //   html += '<br/>';
                     //   const [name,username,email,phone] = data[0];
                       console.log(i);
                       if(Data !=''){
-                      html += `Name : ${Data[i]['name']}`;
-                      html += '<br/>';
+                      html += `${Data[i]['name']}</h5>`;
+                      html += '<br/> <p>';
                       html += `Phone : ${Data[i]['phone']}`;
                       html += '<br/>';
                       html += `Email : ${Data[i]['email']}`;

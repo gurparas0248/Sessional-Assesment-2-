@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <title>Document</title> -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
-
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!--header Section-->
-    <nabvar class="navbar">
+    
+    <navbar class="navbar">
         <h2 class="name">PERSON MANAGEMENT SYSTEM</h2>
         <nav>
             <ul>
@@ -23,63 +25,123 @@
 
             </ul>
         </nav>
-        <img src="images/menu.png" class="menu-icon">
-    </nabvar>
-    <div class="container">
+
+    </navbar>
+    
+    <div class="head">
+        <div class="half-width">
+            <h1 id="top">Hey, how you doin!</h1>
+            <p>Collaborate, manage, and engage your workforce with an HR system that works with your people.
+
+                Effective people management is necessary for organizational and employee development. People management impacts employee engagement, and adopting the best practices in managing your team can create a healthy business culture and optimize workplace productivity.</p>
+            
+            
+        </div>
+        <button onClick = "loadXMLDoc()">THIS IS A BUTTON</button>
+
+        <div class="half-width">
+            <img src="images/p1.png" alt="Mamun Portfolio">
+        </div>
+    </div>
+    <div class="container" >
         
 
         <div class="row">
             
             <div class="col">
-                <div class="card card1">
+                <div class="card card1" id="id1">
                     <h5>Person1</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
                     </p>
+                    
                 </div>
-                <div class="card card2">
+                <div class="card card2" id="id2">
                     <h5>Person2</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
                     </p>
                 </div>
-                <div class="card card3">
+                <div class="card card3" id="id3">
                     <h5>Person3</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
                     </p>
                 </div>
-                <div class="card card4">
+                <div class="card card4" id="id4">
                     <h5>Person4</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
                     </p>
                 </div>
-                <div class="card card5">
+                <div class="card card5" id="id5">
                     <h5>Person5</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
                     </p>
                 </div>
-                <div class="card card6">
+                <div class="card card6" id="id6">
                     <h5>Person6</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
                     </p>
                 </div>
-                <div class="card card6">
+                <div class="card card7" id="id7">
                     <h5>Person6</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
                     </p>
                 </div>
-                <div class="card card6">
+                <div class="card card8" id="id8">
                     <h5>Person6</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
                     </p>
                 </div>
-                
-
+                <div class="card card9" id="id9">
+                    <h5>Person6</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
+                    </p>
+                </div>
+                <div class="card card10" id="id10">
+                    <h5>Person6</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vero!
+                    </p>
+                </div>
             </div>
 
         </div>
 
 
     </div>
-    <!--header Section ended-->
+    <div>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam alias excepturi distinctio provident consequuntur molestiae molestias expedita sint quaerat tempore!</p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+        
+        </footer>
+    </div>
+    
+    
+    </footer>
+
+    
     
   
 

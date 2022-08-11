@@ -1,11 +1,16 @@
 *{
+
     margin:0;
     padding:0;
     font-family: 'Roboto',sans-serif;
 }
+body{
+    margin:0;
+    width: 100%;
+}
 
 .container{
-    width: 84%;
+    width: 100%;
     height:100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/WallpaperDog-961978.jpg);
     background-repeat: no-repeat;
@@ -13,18 +18,34 @@
     background-position: center;
     background-size: cover;
     padding-top: 8% !important;
-    padding-left: 8%;
-    padding-right: 8%;
+    /* margin-left: 1rem; */
+    /* padding-left: 8%; */
+    /* padding-right: 8%; */
 }
+.head {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    /* width: auto; */
+    padding-top: 8%;
+    overflow: hidden;
+  
+  }
+  
+  .half-width {
+    width: 50%;
+    padding-left: 5%;
+    text-align: justify;
+  }
 
 .navbar{
     
     background-color: #000;
+    padding-right: 15px;
     z-index: 999;
     overflow: hidden;
     width: 100%;
     height: 12%;
-    display: flex;
+    display: inline-block;
     align-items: center;
     position:fixed;
 }
@@ -32,6 +53,7 @@
     color: #fff;
     align-content: center;
     padding-left: 15px;
+    padding-top: 30px;
     
 }
 .logo{
@@ -43,16 +65,21 @@
     cursor: pointer;
     margin-left: 40px;
 }
+section{
+    width: 100%;
+}
 nav{
     flex:1;
     text-align: right;
     padding-right: 15px;
+    
 }
 
 nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 60px;
+    
     
 }
 nav ul li a{
@@ -65,7 +92,8 @@ nav ul li a{
     display: flex;
     height: 90%;
     align-items: center;
-    padding-left: 70px;
+    /* padding-left: 70px; */
+    width: 100%;
 }
 .col{
         
@@ -78,10 +106,13 @@ h1{
     color: #fff;
     font-size: 100px;
 }
-p{
-    color: #fff;
-    font-size: 11px;
+.card p{
+    color: black;
+    font-size: 15px;
+    padding-top: 100px;
+    
 }
+
 
 button{
     width: 180px;
@@ -99,6 +130,7 @@ button{
 .card{
     width: 300px;
     height: 370px;
+    text-align: center;
     
     display: inline-block;
     border-radius:10px;
@@ -106,6 +138,7 @@ button{
     box-sizing:border-box;
     cursor: pointer;
     margin: 15px 20px;
+    margin-left: 30px;
     background-position: center;
     background-color: cover;
     transition: transform 0.5s;
@@ -134,6 +167,22 @@ button{
     background-image: url(Desert\ Webpage\ Img/pic-2.png);
 
 }
+.card7{
+    background-image: url(Desert\ Webpage\ Img/pic-2.png);
+
+}
+.card8{
+    background-image: url(Desert\ Webpage\ Img/pic-2.png);
+
+}
+.card9{
+    background-image: url(Desert\ Webpage\ Img/pic-2.png);
+
+}
+.card10{
+    background-image: url(Desert\ Webpage\ Img/pic-2.png);
+
+}
 
 .card:hover{
     transform:translateY(-10px);
@@ -143,4 +192,103 @@ h5{
     color: #fff;
     text-shadow: 0 0 5px #999;
 }
+form{
+    text-align: center;
+    width: 50%;
+}
 
+footer.footer{
+    height: 100%;
+    background: #0f0f0f;
+    position: relative;
+    color:#fff !important;
+}
+
+footer.footer .container{
+    height: auto;
+    display: grid;
+    font-size: xx-large;
+
+    grid-template-columns: repeat(3,1fr);
+}
+
+footer.footer .container >div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .1rem;
+    margin-left: 5rem;
+    margin-right:5rem;
+}
+footer.footer p{
+    font-size: large;
+}
+
+footer.footer .container  h2{
+   
+    color: white;
+    border-top: solid #fff !important;
+    border-width: 3px !important;
+}
+
+footer.footer .newsletter .form-element {
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    
+    border: white;
+    background: transparent;
+    color: white;
+    font-family: Josefin_Sans;
+    font-size: 2rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: linear-gradient(120deg, #a1c4fd 0%, #b1379c 100%);
+    cursor: pointer;
+}
+
+footer.footer .follow div i{
+    color:white;
+    
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 40%;
+
+}
+
+footer.footer .move-up span{
+    color: violet;
+}
+
+footer.footer .move-up span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+footer.footer .btn{
+    position: absolute;
+    right: 5%;
+    top: 75%;
+    padding: 10px;
+    border-radius: 2rem;
+    background: white;
+    color: black;
+    border: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Anton;
+    
+}
+
+footer.footer .btn:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
